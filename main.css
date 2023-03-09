@@ -1,0 +1,93 @@
+body {
+    /* min-height: 3000px; */
+    color: #eeeeee;
+}
+
+section {
+    padding-top: 5rem;
+}
+
+
+
+/* Navbar */
+
+.main-container {
+    background-color: #0e0e0e;
+    /* background-image: url(img/backgroundbg.jpg); */
+    /* background-size: cover; */
+}
+
+nav {
+    background-color: black;
+}
+
+nav .container {
+    padding: 5px;
+}
+
+nav .navbar-brand {
+    /* color: #4fcca3; */
+    font-weight: BOLD;
+    letter-spacing: 3PX;
+    font-size: 25px;
+}
+
+nav .navbar-nav {
+    letter-spacing: 1px;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+    padding-top: 10rem;
+    color: #eeeeee;
+    /* background-color: rgb(37, 37, 37); */
+}
+
+.jumbotron img {
+    width: 200px;
+    border: 2px solid #4fcca3;
+}
+
+/* About me */
+
+#about {
+    background-color: #3a3f47;
+    /* height: 300px; */
+    padding-top: 7rem;
+}
+
+#about p {
+    text-transform: capitalize;
+    text-align: justify;
+}
+
+/* Project */
+
+#project {
+    background-color: #0e0e0e;
+    /* height: 450px; */
+}
+
+#project .card {
+    background-color: #607adb;
+}
+
+/* Contact */
+#contact {
+    background-color: #3a3f47;
+}
+
+/* Footer */
+footer {
+    background-color: #0e0e0e;
+}
+
+footer p {
+    color: #10f5cc;
+    letter-spacing: 1px;
+}
+
+footer i {
+    color: #f5fefd;
+}
