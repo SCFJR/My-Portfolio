@@ -78,6 +78,11 @@ nav .navbar-nav {
     background-color: #3a3f47;
 }
 
+#contact .alert {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
 /* Footer */
 footer {
     background-color: #0e0e0e;

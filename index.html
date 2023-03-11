@@ -162,21 +162,30 @@
                 </div>
             </div>
             <div class="row text-light justify-content-center">
-                <div class="col-md-6">
+                <form name="submit-to-google-sheet" class="col-md-6">
+                    <div class="alert alert-success alert-dismissible my-alert fade show d-none" role="alert">
+                        <strong>terimakasih !</strong> pesan anda berhasil terkirim.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
                     <div class="mb-3">
                         <label for="name" class="form-label">Full Name</label>
-                        <input type="text" class="form-control" id="name" aria-describedby="name">
+                        <input type="text" class="form-control" id="name" aria-describedby="name" name="nama">
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" aria-describedby="email">
+                        <input type="email" class="form-control" id="email" aria-describedby="email" name="email">
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            name="pesan"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
+                    <button type="submit" class="btn btn-primary btn-kirim">Submit</button>
+                    <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        Loading...
+                    </button>
+                </form>
             </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -194,6 +203,10 @@
     </footer>
     <!-- Akhir Footer -->
 
+
+    <!-- Script -->
+    <!-- trigger.js -->
+    <script src="trigger.js"></script>
     <!-- bootstrap CSS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
