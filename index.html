@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Portfolio</title>
     <link rel="icon" type="images/x-icon" href="img/title/code-slash-svgrepo-com (1).svg">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
@@ -14,7 +15,7 @@
 <body id="home">
     <div class="main-container">
         <!-- navbar -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark  shadow-sm">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="#">MFJRA</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -39,7 +40,7 @@
         <section class="jumbotron bg-transparent text-center">
             <img class="rounded-circle mb-3" src="img/profil-porto/profil.jpg" alt="">
             <h1 class="display-4">M Fajar Andima M</h1>
-            <p class="lead">Welding Technique Student | SMKN 1 Kota Bekasi</p>
+            <p class="lead"></p>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#3a3f47" fill-opacity="1"
                     d="M0,224L40,208C80,192,160,160,240,154.7C320,149,400,171,480,154.7C560,139,640,85,720,85.3C800,85,880,139,960,181.3C1040,224,1120,256,1200,256C1280,256,1360,224,1400,208L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
@@ -53,17 +54,17 @@
     <section class="text-light" id="about">
         <div class="container">
             <div class="row text-center mb-3">
-                <div class="col">
+                <div class="col" data-aos="fade-down">
                     <h2 class="fs-1">About Me</h2>
                 </div>
             </div>
             <div class="row justify-content-center fs-5 text-center">
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nostrum doloribus nihil! Laudantium
                         quod quidem eaque ipsa, qui tenetur aliquam magni autem odio ratione praesentium quasi suscipit
                         distinctio modi sunt ipsam recusandae eius unde harum rem quia cupiditate. Voluptatum, quos.</p>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti veritatis consequuntur eum
                         excepturi quos consequatur delectus. Maxime molestias perferendis deserunt, aperiam culpa
                         debitis doloremque porro. Repellendus autem numquam modi odio vel explicabo! Voluptates nesciunt
@@ -83,13 +84,13 @@
     <section id="project">
         <div class="container">
             <div class="row text-center mb-5">
-                <div class="col text-light">
+                <div class="col text-light" data-aos="zoom-in">
                     <h1>My Project</h1>
                 </div>
             </div>
             <div class="row justify-content-center text-light">
                 <div class="col-md-4 mb-3">
-                    <div class="card">
+                    <div class="card" data-aos="fade-right">
                         <img src="img/project-img/welding pict.jpg" class="card-img-top p-1 rounded"
                             alt="Welding ilustration">
                         <div class="card-body">
@@ -100,7 +101,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <div class="card">
+                    <div class="card" data-aos="zoom-in" data-aos-delay="100">
                         <img src="img/project-img/welding pict.jpg" class="card-img-top p-1 rounded"
                             alt="Welding ilustration">
                         <div class="card-body">
@@ -111,7 +112,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <div class="card">
+                    <div class="card" data-aos="fade-left" data-aos-delay="200">
                         <img src="img/project-img/welding pict.jpg" class="card-img-top p-1 rounded"
                             alt="Welding ilustration">
                         <div class="card-body">
@@ -122,7 +123,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <div class="card">
+                    <div class="card" data-aos="fade-right" data-aos-offset="50">
                         <img src="img/project-img/welding pict.jpg" class="card-img-top p-1 rounded"
                             alt="Welding ilustration">
                         <div class="card-body">
@@ -133,7 +134,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <div class="card">
+                    <div class="card" data-aos="fade-left" data-aos-delay="100" data-aos-offset="50">
                         <img src="img/project-img/welding pict.jpg" class="card-img-top p-1 rounded"
                             alt="Welding ilustration">
                         <div class="card-body">
@@ -205,17 +206,25 @@
 
 
     <!-- Script -->
-    <!-- trigger.js -->
-    <script src="trigger.js"></script>
-    <!-- bootstrap CSS -->
+    <!-- Trigger Function -->
+    <script src="function/trigger.js"></script>
+
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
-    <!-- Akhir bootstrap CSS -->
-
-    <!-- Bootstrap Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <!-- Akhir Bootstrap Icon -->
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="function/gasp.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
 
 </body>
 

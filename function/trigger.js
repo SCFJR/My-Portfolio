@@ -1,3 +1,4 @@
+// Trigger Contact
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwEuAtMwYQmFfPlz1GDBdXaJdsQen8_20zQdkauZnKAccJKlWYIM_xKQMWhNg3RmHdvRw/exec'
 const form = document.forms['submit-to-google-sheet']
 const btnKirim = document.querySelector('.btn-kirim')
