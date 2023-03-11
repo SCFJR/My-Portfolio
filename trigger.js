@@ -6,8 +6,8 @@ const myAlert = document.querySelector('.my-alert')
 
 form.addEventListener('submit', (e) => {
     e.preventDefault()
-    // Ketika Tombol Submit Di Klik
-    // Tampilkan Tombol Loading. Hilangkan Tombol Kirim
+    // Pada Saat Tombol Submit Di Klik
+    // Menampilkan Tombol Loading. Hilangkan Tombol Kirim
     btnLoading.classList.toggle('d-none')
     btnKirim.classList.toggle('d-none')
     fetch(scriptURL, {
@@ -15,10 +15,10 @@ form.addEventListener('submit', (e) => {
             body: new FormData(form)
         })
         .then(response => {
-            // Tampilkan Tombol Kirim. Hilangkan Tombol Loading
+            // Menampilkan Tombol Kirim. Hilangkan Tombol Loading
             btnLoading.classList.toggle('d-none')
             btnKirim.classList.toggle('d-none')
-            // Tampilkan Alert
+            // Menampilkan Alert
             myAlert.classList.toggle('d-none')
             // Reset Form
             form.reset();
