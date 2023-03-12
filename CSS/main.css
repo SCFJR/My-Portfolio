@@ -1,7 +1,5 @@
 body {
-    /* min-height: 3000px; */
     color: #eeeeee;
-    overflow-x: hidden;
 }
 
 section {
@@ -16,10 +14,6 @@ section {
     background-color: #0e0e0e;
     /* background-image: url(img/backgroundbg.jpg); */
     /* background-size: cover; */
-}
-
-.navbar {
-    overflow: hidden;
 }
 
 nav {
@@ -76,6 +70,7 @@ nav .navbar-nav {
 
 #project .card {
     background-color: #607adb;
+
 }
 
 /* Contact */
