@@ -54,6 +54,7 @@ nav .navbar-nav {
     background-color: #3a3f47;
     /* height: 300px; */
     padding-top: 7rem;
+    overflow: hidden;
 }
 
 #about p {
@@ -66,6 +67,7 @@ nav .navbar-nav {
 #project {
     background-color: #0e0e0e;
     /* height: 450px; */
+    overflow: hidden;
 }
 
 #project .card {
