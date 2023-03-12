@@ -18,6 +18,10 @@ section {
     /* background-size: cover; */
 }
 
+.navbar {
+    overflow: hidden;
+}
+
 nav {
     background-color: black;
 }
